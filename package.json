@@ -1,0 +1,16 @@
+{
+  "name": "lovebox",
+  "version": "1.0.0",
+  "description": "This is a simple web application designed to show a \"Love Box\" with a flower image and a quote. The box can be opened by clicking the \"Open the Box\" button, and a message saying \"From: Matt To: Christina\" appears before interaction. The application is built using **HTML**, **CSS**, and **Node.js** with **Express** for backend functionality.",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.21.1"
+  }
+}
