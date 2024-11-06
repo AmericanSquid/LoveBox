@@ -22,12 +22,14 @@ Run the following command to install all required dependencies in the project ro
 
 '''bash
 npm install
+'''
 
 ### 3. Start the Server:
 To start the server, run the following command in your terminal:
 
 '''bash
 node server.js
+'''
 
 ### 4. Open in Browser:
 Once the server is running, open your browser and visit the following URL:
