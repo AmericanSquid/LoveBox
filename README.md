@@ -39,7 +39,7 @@ node server.js
 Once the server is running, open your browser and visit the following URL:
 
 ```
-https://localhost:3005
+http://localhost:3005
 ```
 
 ### File Structure:
