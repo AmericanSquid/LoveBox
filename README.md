@@ -10,28 +10,31 @@ This is a simple web application designed to show a "Love Box" with a flower ima
 ## Installation Instructions:
 
 ### 1. Install Dependencies:
+
 First, initialize your project and install the necessary dependencies by running the following commands in the project directory:
 
 ```bash
 npm init -y
 npm install express
-'''
+
 
 ### 2. Install Project Dependencies:
+
 Run the following command to install all required dependencies in the project root:
 
 '''bash
 npm install
-'''
+
 
 ### 3. Start the Server:
+
 To start the server, run the following command in your terminal:
 
 '''bash
 node server.js
-'''
 
 ### 4. Open in Browser:
+
 Once the server is running, open your browser and visit the following URL:
 
 https://localhost:3005
@@ -46,4 +49,5 @@ server.js       # Server file to run the backend (Express server).
 README.md       # This file with app instructions.
 
 ### License:
+
 This project is open-source and free to use. Please feel free to modify it as needed.
