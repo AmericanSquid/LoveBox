@@ -16,38 +16,44 @@ First, initialize your project and install the necessary dependencies by running
 ```bash
 npm init -y
 npm install express
-
+```
 
 ### 2. Install Project Dependencies:
 
 Run the following command to install all required dependencies in the project root:
 
-'''bash
+```bash
 npm install
-
+```
 
 ### 3. Start the Server:
 
 To start the server, run the following command in your terminal:
 
-'''bash
+```bash
 node server.js
+```
 
 ### 4. Open in Browser:
 
 Once the server is running, open your browser and visit the following URL:
 
+```
 https://localhost:3005
+```
 
 ### File Structure:
 
+```
 /public
     /index.html  # Main HTML file with the structure and content.
     /style.css   # CSS file for styling the Love Box.
     /app.js      # JavaScript file with app logic for box interaction.
 server.js       # Server file to run the backend (Express server).
 README.md       # This file with app instructions.
+```
 
 ### License:
 
 This project is open-source and free to use. Please feel free to modify it as needed.
+
