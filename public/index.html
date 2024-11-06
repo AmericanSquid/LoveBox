@@ -1,0 +1,35 @@
+<!-- public/index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Love Box</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Background image with overlay -->
+  <div style="position: fixed; top: 0; left: 0; width: 100%; height: 100%; 
+     background-image: url('https://images8.alphacoders.com/447/447210.jpg'); 
+     background-size: cover; background-position: center; background-repeat: no-repeat; 
+     z-index: -1;">
+  </div>
+
+  <!-- The box with label -->
+  <div class="box" id="box">
+    <div class="message" id="message">
+      <p>From: Matt To: Christina</p>
+    </div>
+    <div class="box-lid"></div>
+    <div class="box-body">
+      <img src="https://cdn11.bigcommerce.com/s-dblrqw/images/stencil/1280x1280/products/859/1570/iStock-472190565__89949.1594564117.jpg?c=2" alt="Flower" id="flower" class="hidden">
+      <p id="quote" class="quote hidden"></p>
+    </div>
+  </div>
+
+  <!-- Button to open the box -->
+  <button id="openBox">Open the Box</button>
+
+  <script src="app.js"></script>
+</body>
+</html>

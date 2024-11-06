@@ -1,0 +1,112 @@
+/* public/style.css */
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  margin: 0;
+  font-family: 'Georgia', serif;
+  background-color: #f3e7dc;
+  color: #5e503f;
+}
+
+#openBox {
+  margin-top: 20px;
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #e1c1a3;
+  border: 2px solid #a67c52;
+  color: #5e503f;
+  border-radius: 8px;
+  font-family: 'Georgia', serif;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+#openBox:hover {
+  background-color: #c7a68f;
+}
+
+.box {
+  position: relative;
+  width: 300px;
+  height: 350px;
+  background-color: #d3a588;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 3px solid #b0816f;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  perspective: 1000px;
+}
+
+.box-lid {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 80px;
+  background-color: #b0816f;
+  transform-origin: top;
+  transform: rotateX(0deg);
+  transition: transform 1s;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.box.opened .box-lid {
+  transform: rotateX(-90deg);
+}
+
+.box-body {
+  width: 100%;
+  height: 220px;
+  background-color: #f3e7dc;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+.hidden {
+  display: none;
+}
+
+img#flower {
+  width: 150px;
+  height: 150px;
+  border-radius: 8px;
+  margin-bottom: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.quote {
+  margin-top: 10px;
+  font-size: 18px;
+  color: #5e503f;
+  text-align: center;
+  font-family: 'Georgia', serif;
+  padding: 0 10px;
+}
+
+/* Centered label inside the box */
+.message {
+  position: absolute;
+  top: 50%; /* Vertically center */
+  left: 50%; /* Horizontally center */
+  transform: translate(-50%, -50%); /* Adjust for perfect centering */
+  font-family: 'Georgia', serif;
+  font-size: 18px;
+  color: #5e503f;
+  text-align: center;
+  z-index: 1;
+  background-color: #e1c1a3;
+  padding: 5px 10px;
+  border-radius: 8px;
+  border: 2px solid #a67c52;
+}
