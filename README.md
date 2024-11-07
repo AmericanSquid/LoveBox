@@ -1,40 +1,47 @@
 # Love Box Web App
 
-This is a simple web application designed to show a "Love Box" with a flower image and a quote. The box can be opened by clicking the "Open the Box" button, and a message saying "From: Matt To: Christina" appears before interaction. The application is built using **HTML**, **CSS**, and **Node.js** with **Express** for backend functionality.
+A simple, interactive web application designed as a heartfelt gesture. The "Love Box" displays a flower image and a quote when opened, with a personal label: "From: Matt To: Christina." You can easily customize the names, images and quotes to make it uniquely yours. The application is built using **HTML**, **CSS**, and **Node.js** with **Express** for backend functionality.
 
 ## Features:
-- Display a flower image and a quote inside a box.
-- The box can be opened with an animation when clicked.
-- The message "From: Matt To: Christina" appears as a label on the box.
+- Personalized Message: Shows "From: Matt To: Christina" before interaction.
+- Interactive Box: Click "Open the Box" to reveal a flower image and a quote.
+- Customizable Content: Easily update names in index.html and add your own quotes in app.js.
 
 ## Installation Instructions:
 
-### 1. Install Dependencies:
+### 1. Clone the LoveBox Repository:
 
-First, initialize your project and install the necessary dependencies by running the following commands in the project directory:
-
-```bash
-npm init -y
-npm install express
-```
-
-### 2. Install Project Dependencies:
-
-Run the following command to install all required dependencies in the project root:
+First, clone the LoveBox Repository:
 
 ```bash
-npm install
+git clone https://github.com/AmericanSquid/LoveBox.git
 ```
 
-### 3. Start the Server:
+### 2. Navigate to LoveBox Directory:
 
-To start the server, run the following command in your terminal:
+Navigate to the project directory:
 
 ```bash
-node server.js
+cd LoveBox
 ```
 
-### 4. Open in Browser:
+### 3. Build the image:
+
+To build the image, run the following command in your terminal:
+
+```bash
+docker build -t lovebox .
+```
+
+### 5. Start the container:
+
+Once you have finished building the image, run the following command to start the container:
+
+```bash
+docker run -d -p 3005:3005 lovebox
+```
+
+### 6. Open in Browser:
 
 Once the server is running, open your browser and visit the following URL:
 
@@ -46,11 +53,14 @@ http://localhost:3005
 
 ```
 /public
-    /index.html  # Main HTML file with the structure and content.
-    /style.css   # CSS file for styling the Love Box.
-    /app.js      # JavaScript file with app logic for box interaction.
-server.js       # Server file to run the backend (Express server).
-README.md       # This file with app instructions.
+    /index.html   # Main HTML file with the structure and content.
+    /style.css    # CSS file for styling the LoveBox UI.
+    /app.js       # JavaScript file with app logic for box interaction.
+Dockerfile        # Defines instructions to containerize the app.
+README.md         # This file with app instructions.
+package-lock.json # Auto-generated file that locks the dependencies.
+package.json      # Lists project dependencies and scripts.
+server.js         # Server file to run the backend (Express server).
 ```
 
 ### License:
